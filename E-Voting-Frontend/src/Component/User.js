@@ -2,12 +2,15 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
-import useAuth from '../Hooks/useAuth'
+import useAuth from '../Hooks/useAuth';
+import { useNavigate } from "react-router-dom";
 
 function User() {
+  const navigate = useNavigate();
   const {auth} = useAuth();
   const handleClick = () => {
     console.log(auth);
+    navigate("/Profile");
   };
 
   return (

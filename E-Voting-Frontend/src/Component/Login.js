@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext} from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "../Api/axios";
 import useAuth from '../Hooks/useAuth'
+import AuthContext from "../Context/AuthProvider";
 
 const LOGIN_URL = "/authenticate";
 
@@ -18,6 +19,7 @@ function parseJwt(token) {
 
 export default function Login() {
   const { setAuth } = useAuth();
+  const [authState, setAuthState] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
@@ -46,6 +48,7 @@ export default function Login() {
       const data = parseJwt(accessToken);
       const role = data.isUser ? "USER" : "ADMIN";
       setAuth({ username, password, role, accessToken });
+      setAuthState(true);
       setUsername("");
       setPassword("");
       if(data.isUser){

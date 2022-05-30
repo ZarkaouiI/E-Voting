@@ -10,6 +10,7 @@ import Home from './Component/Home';
 import Result from './Component/Result';
 import PendingVoterId from "./Component/PendingVoterId";
 import User from './Component/User';
+import Profile from './Component/Profile/Profile';
 import RequiredAuth from './Component/RequiredAuth'
 import { BrowserRouter, Route,  Routes} from "react-router-dom";
 
@@ -32,6 +33,7 @@ function App() {
 
           <Route element={<RequiredAuth allowedRoles={ROLES.User} />}>
             <Route exact path='/user' element={<User />}></Route>
+            <Route exact path='/Profile' element={<Profile />}></Route>
           </Route>
 
           <Route element={<RequiredAuth allowedRoles={ROLES.Admin} />}>

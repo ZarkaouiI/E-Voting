@@ -26,7 +26,7 @@ function PendingVoterId() {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Mark</td>
+            <td>Aboubakr El Harrak</td>
             <td>Pending</td>
             <td>
               <Button className='mt-2' variant='outline-success' type='submit'>
@@ -39,7 +39,7 @@ function PendingVoterId() {
           </tr>
           <tr>
             <td>2</td>
-            <td>Ram</td>
+            <td>Oussama Krab</td>
             <td>Pending</td>
             <td>
               <Button className='mt-2' variant='outline-success' type='submit'>
@@ -52,7 +52,7 @@ function PendingVoterId() {
           </tr>
           <tr>
             <td>3</td>
-            <td>Raju</td>
+            <td>Idriss Zarkaoui</td>
             <td>Pending</td>
             <td>
               <Button className='mt-2' variant='outline-success' type='submit'>

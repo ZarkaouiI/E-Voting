@@ -19,20 +19,20 @@ function Result() {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Narendera Modi</td>
-            <td>Varanasi</td>
+            <td>Meryem EZZAAM</td>
+            <td>Rabat 332</td>
             <td>246</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Rahul Gandhi</td>
-            <td>Rai Bareily</td>
+            <td>Adnane EZ-ZAIM</td>
+            <td>RABAT 446</td>
             <td>30</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Akhilesh Yadav</td>
-            <td>Safai</td>
+            <td>Aboubakr EL HARRAK</td>
+            <td>RABAT 121</td>
             <td>100</td>
           </tr>
         </tbody>
