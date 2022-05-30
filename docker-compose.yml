@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+    frontend:
+        image: 'evoting/evoting-frontend'
+        build: 
+            context: ./frontend/
+        ports: 
+            - 3000:80
+        container_name: evoting_frontend
+    backend:
+        image: 'evoting/evoting-backend'
+        build:
+            context: ./backend/
+        ports: 
+            - 8080:8080
+        container_name: evoting_backend
+        depends_on:
+            - db
+        environment:
+          - SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/evs
+          - SPRING_DATASOURCE_USERNAME=root
+          - SPRING_DATASOURCE_PASSWORD=Gift2099
+          - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+          
+    db:
+        image: 'postgres:13.1-alpine'
+        container_name: evs
+        ports: 
+            - 3306:3306
+        environment:
+            

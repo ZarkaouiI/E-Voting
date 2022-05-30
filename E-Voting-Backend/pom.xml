@@ -8,10 +8,10 @@
 		<version>2.6.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ElectronicVotingSystem</groupId>
-	<artifactId>Electronic-Voting-System</artifactId>
+	<groupId>com.evoting</groupId>
+	<artifactId>evoting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Electronic-Voting-System</name>
+	<name>E-Voting</name>
 	<description>Spring Boot backend for Electronic Voting System</description>
 	<properties>
 		<java.version>11</java.version>
